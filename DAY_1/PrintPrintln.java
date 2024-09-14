@@ -8,3 +8,7 @@ public class PrintPrintln {
         System.out.print(a);
     }
 }
+
+//output: 
+//77
+//7
