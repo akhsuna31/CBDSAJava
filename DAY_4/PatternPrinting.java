@@ -1,10 +1,7 @@
 package DAY_4;
 import java.util.*;
 public class PatternPrinting {
-    public static void main(String[] args) {
-        Scanner sc= new Scanner(System.in);
-        int n= sc.nextInt();
-        System.out.println();
+    static void printSquare(int n){
         //square with *
         for(int i=1; i<=n;i++){
             for(int j=1; j<=n; j++){
@@ -12,6 +9,13 @@ public class PatternPrinting {
             }
             System.out.println();
         }
+    }
+    public static void main(String[] args) {
+        Scanner sc= new Scanner(System.in);
+        int n= sc.nextInt();
+        System.out.println();
+        printSquare(n);
+        //similarly we can make functions for each of them
         // right facing triangle with *
         System.out.println();
         for(int i=1; i<=n;i++){
