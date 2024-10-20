@@ -64,7 +64,7 @@ public class Arrays {
 
         System.out.println("Your reverse array is: ");
         reverse2(arr);
-
+ 
         sc.close();
     }
 }
