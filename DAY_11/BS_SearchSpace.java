@@ -28,3 +28,12 @@ public class BS_SearchSpace {
         System.out.println(center(distance, time, low, high));
     }
 }
+
+//leetcode
+//magnetic balls: 1552 done
+//koko eating bananas: 875  done
+//repair cars: 2594
+
+//aggresive cows
+//painter's partition
+//read books/books allocation
