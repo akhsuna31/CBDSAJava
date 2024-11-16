@@ -29,6 +29,59 @@ public class TwoDArray {
         System.out.println(sum);
     }
 
+    static void rowWiseSorting(int[][] array){
+        for (int i = 0; i < array.length; i++) {
+            Arrays.sort(array[i]);
+        }
+    }
+    static void columnWiseSorting(int[][] array){
+        
+        Arrays.sort(array, (a,b)-> Integer.compare(a[0], b[0]));
+        
+    }
+
+    static void transpose(int[][] array){
+        int m= array.length;
+        int n= array[0].length;
+        int[][] transposeArray= new int[m][n];
+        for ( int i = 0; i < m; i++) {
+            for (int j = 0; j < n; j++) {
+                transposeArray[i][j]=array[j][i];
+            }
+        }
+        display(transposeArray);
+    }
+
+    static void twoDTo1d(int[][] array){
+        int n= array.length;
+        int m= array[0].length;
+        int[] arr= new int[n*m];
+        for (int i = 0; i < array.length; i++) {
+            for (int j = 0; j < array[0].length; j++) {
+                arr[m*i+j]=array[i][j];
+            }
+        }
+    }
+
+    static void OneDTo2d(int[] array,int n, int m){
+        if(n*m==array.length){
+            int[][] twoDArray= new int[n][m];
+            for (int i = 0; i < array.length; i++) {
+                for (int j = 0; j < array[0].length; j++) {
+                    twoDArray[i][j]=array[m*i+j];
+                }
+            }
+            display(twoDArray);
+        }
+        else{
+            System.out.println("2D Array not possible");
+        }
+    }
+
+    static void completeSort(int[][] array){
+
+    }
+
     public static void main(String[] args) {
         Scanner sc=new Scanner(System.in);
         int n= sc.nextInt();
@@ -38,8 +91,12 @@ public class TwoDArray {
         populate( array);
         
         display(array);
-
-        calculateSum(array);
+        //rowWiseSorting(array);
+        System.out.println();
+        //columnWiseSorting(array);
+        //display(array);
+        transpose(array);
+        //calculateSum(array);
 
         sc.close();
     }
