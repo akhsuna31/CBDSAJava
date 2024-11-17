@@ -67,7 +67,7 @@ public class TwoDArray {
         if(n*m==array.length){
             int[][] twoDArray= new int[n][m];
             for (int i = 0; i < array.length; i++) {
-                for (int j = 0; j < array[0].length; j++) {
+                for (int j = 0; j < array.length; j++) {
                     twoDArray[i][j]=array[m*i+j];
                 }
             }
