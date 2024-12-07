@@ -1,5 +1,5 @@
 package DAY_15;
-import java.util.*;
+
 public class Strings2 {
     static String reverse(String str){
         String strReverse="";
